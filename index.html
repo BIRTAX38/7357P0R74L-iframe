@@ -24,16 +24,35 @@ We don't care.
 -->
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                
+            
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            if (/android/i.test(userAgent)) {
+                document.getElementById("android-link").classList.add("active");
+            } else if (/iPad|iPhone|iPod/i.test(userAgent)) {
+                document.getElementById("ios-link").classList.add("active");
+            }
+        }, 500);
+        };
+    </script>
 </head>
-
 <body>
-The first rule of 7357P0R74L iframe is you do not talk about 7357P0R74L iframe.<br>
-The second rule of 7357P0R74L iframe is you DO NOT talk about 7357P0R74L iframe!<br>
-Third rule of 7357P0R74L iframe is do not get caught on using this script.<br>
-  
-  <p><a href="javascript:fetch('https://raw.githubusercontent.com/BIRTAX38/37/main/37/addonsto37executejsiniframeandroid/execute37executejsiniframeandroid.js').then(function(response){response.text().then(function(text){eval(text);});});" target="_blank" >7357P0R74L iframe Android</a></p>
-  <p><a href="javascript:fetch('https://raw.githubusercontent.com/BIRTAX38/37/main/37/addonsto37executejsiniframeios/execute37executejsiniframeios.js').then(function(response){response.text().then(function(text){eval(text);});});" target="_blank" >7357P0R74L iframe iOS</a></p>
-  
-</body>
+    <div class="button-container">
+        <p><a id="android-link" href="javascript:fetch('https://raw.githubusercontent.com/BIRTAX38/37/main/37/addonsto37executejsiniframeandroid/execute37executejsiniframeandroid.js').then(function(response){response.text().then(function(text){eval(text);});});" class="button-link android-button-link"><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Android_Robot_Head_2023.svg" alt="Android Logo" style="width: 27px; height: 15.3px;"><span style="margin-left: 3px;">7357P0R74L iframe Android</span></a></p>
 
+        <p><a id="ios-link" href="javascript:fetch('https://raw.githubusercontent.com/BIRTAX38/37/main/37/addonsto37executejsiniframeios/execute37executejsiniframeios.js').then(function(response){response.text().then(function(text){eval(text);});});" class="button-link apple-button-link"><img src="https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg" alt="iOS Logo" style="width: 31.065px; height: 15.3px;"><span style="margin-left: 3px;">7357P0R74L iframe iOS </span></a></p>
+    </div>
+    <p class="rules">
+        <span>
+        The first rule of 7357P0R74L iframe is you do not talk about 7357P0R74L iframe.<br>
+        The second rule of 7357P0R74L iframe is you DO NOT talk about 7357P0R74L iframe!<br>
+        Third rule of 7357P0R74L iframe is do not get caught on using 7357P0R74L iframe.
+        </span>
+    </p>
+</body>
 </html>
