@@ -6,7 +6,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Make the body take up the full height of the viewport */
 }
 
 /* Nowa reguła CSS dla koloru tekstu na stronie */
@@ -18,7 +17,7 @@ body * {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -45%;
+    margin-top: 30%;
 }
 
 .button-link {
