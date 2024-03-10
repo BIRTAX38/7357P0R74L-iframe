@@ -1,26 +1,87 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Madimi One", sans-serif;
     margin: 0;
-    background-color: #353535;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: auto;
 }
 
-body * {
+
+@font-face {
+    font-family: 'Madimi One';
+    src: url('fonts/MadimiOne-Regular.ttf') format('truetype');
+}
+
+/*
+#Title37 {
     color: #fff;
-}
-
-#Title37{
-    color:#fff;
-    text-shadow:0 0 .5rem;
-    font-size:.80rem;
-    font: bold;
-    text-align:center;
-    padding:.1rem 1rem;
+    text-shadow: 0 0 .5rem;
     font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: .1rem 1rem;
+    margin: 10px;
 }
+*/
+
+
+
+.neon {
+    font-family: "Madimi One", sans-serif;
+    font-size: 30px;
+    color: #74eaff !important;
+    letter-spacing: 4px;
+    text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff!important;
+    animation: neontranfsorm 1.4s, Fullneonflickeer 4s 1.5s;
+  }
+  
+  @keyframes neontranfsorm {
+    1% {opacity: 0;transform: translateY(150%);}
+  }
+
+
+  .flicker {
+    animation: flicker37 4s 3s;
+  }
+
+  
+  @keyframes Fullneonflickeer {
+    2% {opacity: 0.1; }
+    2% {opacity: 1.0; }
+    3% {opacity: 1.0; }
+    4% {opacity: 0.4; }
+    6% {opacity: 0.4; }
+    7% {opacity: 0.7; }
+    8% {opacity: 1.0; }
+    9% {opacity: 1.0; }
+    10% {opacity: 1.0; }
+    11% {opacity: 0.4; }
+    12% {opacity: 1.0; }
+    19% {opacity: 1.0; }
+    20% {opacity: 0.4; }
+    21% {opacity: 1.0; }
+    29% {opacity: 1.0; }
+    30% {opacity: 0.4; }
+    31% {opacity: 1.0; }
+    96% {opacity: 1.0; }
+    97% {opacity: 0.4; }
+    98% {opacity: 0.4; }
+    99% {opacity: 1.0; }
+  }
+
+  @keyframes flicker37 {
+    82% {opacity: 1.0; }
+    83% {opacity: 0.4; }
+    86% {opacity: 0.4; }
+    87% {opacity: 1.0; }
+    97% {opacity: 1.0; }
+    98% {opacity: 0.4; }
+    99% {opacity: 1.0; }
+  }  
+    
 
 .button-container {
     display: flex;
@@ -29,14 +90,17 @@ body * {
 }
 
 .button-link {
+    text-shadow: 0 0 .7rem #000;
     display: flex;
     align-items: center;
     padding: 8px 16px;
     border-radius: 30px;
-    background-color: #dccaca18;
-    color: rgb(239, 239, 239) !important;
+    background-color: #a7a7a782;
+    color: #fff !important;
     text-decoration: none;
-    transition: color 0.8s ease, background-color 0.8s ease;
+    transition-delay: 1s;
+    transition: color 1.2s ease, background-color 1.2s ease, border-color 1.2s ease-out, opacity 1.2s ease;
+    opacity: 0.3;
 }
 
 .android-button-link,
@@ -45,7 +109,17 @@ body * {
 }
 
 .active {
-    background-color: #ebebeb82 !important;
+    background-color: #c0c0c0 !important;
+    opacity: 1;
+}
+
+.deactivated {
+    opacity: 0.3;
+}
+
+.button-link.android-button-link.active,
+.button-link.button-link.android-button-link.active {
+    background-color: #a7a7a782 !important;
 }
 
 .rules {
@@ -53,10 +127,20 @@ body * {
     text-align: center;
     color: #333;
     margin-top: 5px;
+    margin-inline: 20px
 }
 
 .button-link img {
     margin-right: 5px;
+}
+
+.androidsvg {
+    stroke: #000000;
+    filter: drop-shadow(0px 0px 4px #000000);
+}
+
+.iossvg {
+    filter: drop-shadow(0px 0px 7px #000000);
 }
 
 .button-container p {
@@ -68,19 +152,29 @@ body * {
     align-items: center;
     padding: 8px 16px;
     border-radius: 30px;
-    background-color: #dccaca18;
-    color: rgb(239, 239, 239) !important;
+    background-color: #a7a7a782;
+    color: #fff !important;
     text-decoration: none;
     font-size: 90%;
     text-align: center;
     margin-bottom: 0px;
 }
 
-
-
-.fade-in {
-    animation: fadeIn 0.9s ease forwards;
+.body37 {
+    animation: fadeIn 1.3s 3.5s ease forwards;
     opacity: 0;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 25px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.body37 * {
+    color: #fff;
 }
 
 @keyframes fadeIn {
