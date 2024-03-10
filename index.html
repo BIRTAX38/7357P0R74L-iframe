@@ -25,36 +25,38 @@ We don't care.
 <html>
 <head>
     <meta name="darkreader-lock">
-    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script>
         window.onload = function() {
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
             if (/android/i.test(userAgent)) {
-                setTimeout(() => {document.getElementById("android-link").classList.add("active");}, 700);
+                setTimeout(() => {document.getElementById("android-link").classList.add("active");}, 900);
                 document.getElementById("how-to-use-link").href = "./tutorial/android";
             } else if (/iPad|iPhone|iPod/i.test(userAgent)) {
+                //document.querySelector(".button-container").style.flexDirection = "column-reverse";
                 document.getElementById("how-to-use-link").href = "./tutorial/ios";
-                setTimeout(() => {document.getElementById("ios-link").classList.add("active");}, 700);
-                document.querySelector(".button-container").style.flexDirection = "column-reverse";
+                setTimeout(() => {document.getElementById("ios-link").classList.add("active");}, 900);
             }
         };
     </script>
 </head>
 <body>
-    <p id="Title37" class="fade-in">Welcome to<br>7357P0R74L</p>
-    <div class="button-container fade-in">
-        <p><a id="android-link" href="javascript:fetch('https://raw.githubusercontent.com/BIRTAX38/37/main/37/addonsto37executejsiniframeandroid/execute37executejsiniframeandroid.js').then(function(response){response.text().then(function(text){eval(text);});});" class="button-link android-button-link"><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Android_Robot_Head_2023.svg" alt="Android Logo" style="width: 26.238px; height: 15.3px;"><span style="margin-left: 3px;">7357P0R74L iframe Android</span></a></p>
-
-        <p><a id="ios-link" href="javascript:fetch('https://raw.githubusercontent.com/BIRTAX38/37/main/37/addonsto37executejsiniframeios/execute37executejsiniframeios.js').then(function(response){response.text().then(function(text){eval(text);});});" class="button-link apple-button-link"><img src="https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg" alt="iOS Logo" style="width: 31.065px; height: 15.3px;"><span style="margin-left: 3px;">7357P0R74L iframe iOS </span></a></p>
+    <p id="Title37" class="neon fade-in neon-text" >Welcome to<br>7<span class="flicker">3</span>5<span class="flicker">7</span>P0R74L</p>
+    <div class="body37">
+        <div class="button-container">
+            <p><a id="android-link" href="javascript:fetch('https://raw.githubusercontent.com/BIRTAX38/37/main/37/addonsto37executejsiniframeandroid/execute37executejsiniframeandroid.js').then(function(response){response.text().then(function(text){eval(text);});});" class="button-link android-button-link"><img class="androidsvg" src="https://upload.wikimedia.org/wikipedia/commons/2/26/Android_Robot_Head_2023.svg" alt="Android Logo" style="width: 26.238px; height: 15.3px;"><span style="margin-left: 3px;">7357P0R74L iframe Android</span></a></p>
+    
+            <p><a id="ios-link" href="javascript:fetch('https://raw.githubusercontent.com/BIRTAX38/37/main/37/addonsto37executejsiniframeios/execute37executejsiniframeios.js').then(function(response){response.text().then(function(text){eval(text);});});" class="button-link apple-button-link"><img class="iossvg" src="https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg" alt="iOS Logo" style="width: 31.065px; height: 15.3px;"><span style="margin-left: 3px;">7357P0R74L iframe iOS </span></a></p>
+        </div>
+        <p><a href="" id="how-to-use-link"class="tutorial"><span>How to use?</span></a></p>
+        <p class="rules">
+            <span>
+            The first rule of using 7357P0R74L is you do not talk about using 7357P0R74L.<br>
+            The second rule of using 7357P0R74L is you do not talk about using 7357P0R74L!<br>
+            Third rule of the using 7357P0R74L is do not get caught on using 7357P0R74L.<br>
+            </span>
+        </p>
     </div>
-    <p><a href="" id="how-to-use-link"class="tutorial fade-in"><span>How to use?</span></a></p>
-    <p class="rules fade-in">
-        <span>
-        The first rule of using 7357P0R74L is you do not talk about using 7357P0R74L.<br>
-        The second rule of using 7357P0R74L is you do not talk about using 7357P0R74L!<br>
-        Third rule of the using 7357P0R74L is do not get caught on using 7357P0R74L.<br>
-        </span>
-    </p>
 </body>
 </html>
