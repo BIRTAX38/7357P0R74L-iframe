@@ -17,7 +17,7 @@ body {
 
 /*
 #Title37 {
-    color: #fff;
+   color: #fff;
     text-shadow: 0 0 .5rem;
     font-size: 30px;
     font-weight: bold;
@@ -32,15 +32,16 @@ body {
 .neon {
     font-family: "Madimi One", sans-serif;
     font-size: 30px;
-    color: #74eaff !important;
+   color: #74eaff;
     letter-spacing: 4px;
-    text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff!important;
+    text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;
     animation: neontranfsorm 8s, Fullneonflicker 4s 1.5s;
   }
   
   @keyframes neontranfsorm {
-    1% {opacity: 0;transform: translateY(300%);}
-    80% {transform: translateY(300%);}
+    1% {opacity: 0;transform: translateY(500%);}
+    10% {opacity: 1;transform: translateY(500%);}
+    80% {transform: translateY(500%);}
     100% {transform: translateY(0%);}
   }
 
@@ -49,53 +50,53 @@ body {
 
   
   @keyframes Fullneonflicker {
-    2% {opacity: 0.1; }
-    2% {opacity: 1.0; }
-    3% {opacity: 1.0; }
-    4% {opacity: 0.4; }
-    6% {opacity: 0.4; }
-    7% {opacity: 0.7; }
-    8% {opacity: 1.0; }
-    9% {opacity: 1.0; }
-    10% {opacity: 1.0; }
-    11% {opacity: 0.4; }
-    12% {opacity: 1.0; }
-    19% {opacity: 1.0; }
-    20% {opacity: 0.4; }
-    21% {opacity: 1.0; }
-    29% {opacity: 1.0; }
-    30% {opacity: 0.4; }
-    31% {opacity: 1.0; }
-    57% {opacity: 1.0; }
-    58% {opacity: 0.4; }
-    94% {opacity: 0.4; }
-    95% {opacity: 1.0; }
-    96% {opacity: 1.0; }
-    97% {opacity: 0.4; }
-    98% {opacity: 0.4; }
-    99% {opacity: 1.0; }
+    2% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    3% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    4% {opacity: 0.2; color: #080808; text-shadow:none;}
+    6% {opacity: 0.2; color: #080808; text-shadow:none;}
+    7% {opacity: 0.2; color: #080808; text-shadow:none;}
+    8% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    9% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    10% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    11% {opacity: 0.2; color: #080808; text-shadow:none;}
+    12% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    19% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    20% {opacity: 0.2; color: #080808; text-shadow:none;}
+    21% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    29% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    30% {opacity: 0.2; color: #080808; text-shadow:none;}
+    31% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    57% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    58% {opacity: 0.2; color: #080808; text-shadow:none;}
+    94% {opacity: 0.2; color: #080808; text-shadow:none;}
+    95% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    96% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    97% {opacity: 0.2; color: #080808; text-shadow:none;}
+    98% {opacity: 0.2; color: #080808; text-shadow:none;}
+    99% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
   }
 
   .flicker {
-    animation: flicker37 4s 5s, brokenthreeseven 4s 1.5s;
+    animation: flicker37 4s 7s, brokenthreeseven 4s 1.4999s;
   }
   
   @keyframes flicker37 {
-    82% {opacity: 1.0; }
-    83% {opacity: 0.4; }
-    86% {opacity: 0.4; }
-    87% {opacity: 1.0; }
-    97% {opacity: 1.0; }
-    98% {opacity: 0.4; }
-    99% {opacity: 1.0; }
+    82% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    83% {opacity: 0.2; color: #080808; text-shadow:none;}
+    86% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    87% {opacity: 0.2; color: #080808; text-shadow:none;}
+    88% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
   }  
 
   @keyframes brokenthreeseven {
-    29% {opacity: 1.0; }
-    30% {opacity: 0.4; }
-    31% {opacity: 0.4; }
-    57% {opacity: 0.4; }
-    58% {opacity: 1.0; }
+    29% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    30% {opacity: 0.2; color: #080808; text-shadow:none;}
+    31% {opacity: 0.2; color: #080808; text-shadow:none;}
+    56% {opacity: 0.2; color: #080808; text-shadow:none;}
+    57% {opacity: 1.0; color: #080808; text-shadow:none;}
+    58% {opacity: 1.0; color: #080808; text-shadow:none;}
+    94% {opacity: 1.0; color: #080808; text-shadow:none;}
+    95% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
   }  
     
 
@@ -112,7 +113,7 @@ body {
     padding: 8px 16px;
     border-radius: 30px;
     background-color: #a7a7a782;
-    color: #fff !important;
+   color: #fff !important;
     text-decoration: none;
     transition-delay: 1s;
     transition: color 1.2s ease, background-color 1.2s ease, border-color 1.2s ease-out, opacity 1.2s ease;
@@ -141,7 +142,7 @@ body {
 .rules {
     font-size: 100%;
     text-align: center;
-    color: #333;
+   color: #333;
     margin-top: 5px;
     margin-inline: 20px
 }
@@ -169,7 +170,7 @@ body {
     padding: 8px 16px;
     border-radius: 30px;
     background-color: #a7a7a782;
-    color: #fff !important;
+   color: #fff !important;
     text-decoration: none;
     font-size: 90%;
     text-align: center;
@@ -186,11 +187,11 @@ body {
     align-items: center;
     margin-inline: 25px;
     border-radius: 20px;
-    color: #fff;
+   color: #fff;
 }
 
 .body37 * {
-    color: #fff;
+   color: #fff;
 }
 
 @keyframes fadeIn {
