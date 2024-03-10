@@ -30,73 +30,67 @@ body {
 
 
 .neon {
+    animation: neontranfsorm 8s, Fullneonflicker 4s 1.4s;
     font-family: "Madimi One", sans-serif;
     font-size: 30px;
-   color: #74eaff;
+    color: #74eaff;
     letter-spacing: 4px;
     text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;
-    animation: neontranfsorm 8s, Fullneonflicker 4s 1.5s;
+  }
+  .flicker {
+    /*animation: brokenthreeseven 8s 1.4s;*/
+    animation: brokenthreeseven 8s 1.4s, flicker37 4s 13s;
   }
   
   @keyframes neontranfsorm {
+    from {opacity: 0;}
     1% {opacity: 0;transform: translateY(500%);}
-    10% {opacity: 1;transform: translateY(500%);}
-    80% {transform: translateY(500%);}
+    10% {opacity: 1;transform: translateY(150%);}
+    80% {transform: translateY(150%);}
     100% {transform: translateY(0%);}
-  }
+}
 
-
-
-
-  
   @keyframes Fullneonflicker {
-    2% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    3% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    4% {opacity: 0.2; color: #080808; text-shadow:none;}
-    6% {opacity: 0.2; color: #080808; text-shadow:none;}
-    7% {opacity: 0.2; color: #080808; text-shadow:none;}
-    8% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    9% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    10% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    11% {opacity: 0.2; color: #080808; text-shadow:none;}
-    12% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    19% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    20% {opacity: 0.2; color: #080808; text-shadow:none;}
-    21% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    29% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    30% {opacity: 0.2; color: #080808; text-shadow:none;}
-    31% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    57% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    58% {opacity: 0.2; color: #080808; text-shadow:none;}
-    94% {opacity: 0.2; color: #080808; text-shadow:none;}
-    95% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    96% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    97% {opacity: 0.2; color: #080808; text-shadow:none;}
-    98% {opacity: 0.2; color: #080808; text-shadow:none;}
-    99% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    2% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    3% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    4% {color: transparent; text-shadow:none;}
+    6% {color: transparent; text-shadow:none;}
+    7% {color: transparent; text-shadow:none;}
+    8% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    9% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    10% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    11% {color: transparent; text-shadow:none;}
+    12% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    19% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    20% {color: transparent; text-shadow:none;}
+    21% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    29% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    30% {color: transparent; text-shadow:none;}
+    31% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    57% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    58% {color: transparent; text-shadow:none;}
+    94% {color: transparent; text-shadow:none;}
+    95% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    96% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    97% {color: transparent; text-shadow:none;}
+    98% {color: transparent; text-shadow:none;}
+    99% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
   }
 
-  .flicker {
-    animation: flicker37 4s 7s, brokenthreeseven 4s 1.4999s;
-  }
+
   
   @keyframes flicker37 {
-    82% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    83% {opacity: 0.2; color: #080808; text-shadow:none;}
-    86% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    87% {opacity: 0.2; color: #080808; text-shadow:none;}
-    88% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    82% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    83% {color: transparent; text-shadow:none;}
+    86% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    87% {color: transparent; text-shadow:none;}
+    88% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
   }  
 
   @keyframes brokenthreeseven {
-    29% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
-    30% {opacity: 0.2; color: #080808; text-shadow:none;}
-    31% {opacity: 0.2; color: #080808; text-shadow:none;}
-    56% {opacity: 0.2; color: #080808; text-shadow:none;}
-    57% {opacity: 1.0; color: #080808; text-shadow:none;}
-    58% {opacity: 1.0; color: #080808; text-shadow:none;}
-    94% {opacity: 1.0; color: #080808; text-shadow:none;}
-    95% {opacity: 1.0; color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    57% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    58% {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
+    94%  {color: #74eaff; text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff;}
   }  
     
 
