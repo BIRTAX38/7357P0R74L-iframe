@@ -35,7 +35,7 @@ body {
     color: #74eaff !important;
     letter-spacing: 4px;
     text-shadow: 1px 0px 4px #9ef0ff, 2px 0px 4px #9ef0ff, 3px 0px 4px #9ef0ff!important;
-    animation: neontranfsorm 8s, Fullneonflickeer 4s 1.5s;
+    animation: neontranfsorm 8s, Fullneonflicker 4s 1.5s;
   }
   
   @keyframes neontranfsorm {
@@ -45,12 +45,10 @@ body {
   }
 
 
-  .flicker {
-    animation: flicker37 4s 5s;
-  }
+
 
   
-  @keyframes Fullneonflickeer {
+  @keyframes Fullneonflicker {
     2% {opacity: 0.1; }
     2% {opacity: 1.0; }
     3% {opacity: 1.0; }
@@ -78,6 +76,10 @@ body {
     99% {opacity: 1.0; }
   }
 
+  .flicker {
+    animation: flicker37 4s 5s, brokenthreeseven 4s 1.5s;
+  }
+  
   @keyframes flicker37 {
     82% {opacity: 1.0; }
     83% {opacity: 0.4; }
@@ -86,6 +88,14 @@ body {
     97% {opacity: 1.0; }
     98% {opacity: 0.4; }
     99% {opacity: 1.0; }
+  }  
+
+  @keyframes brokenthreeseven {
+    29% {opacity: 1.0; }
+    30% {opacity: 0.4; }
+    31% {opacity: 0.4; }
+    57% {opacity: 0.4; }
+    58% {opacity: 1.0; }
   }  
     
 
