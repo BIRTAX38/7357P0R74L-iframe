@@ -34,7 +34,7 @@ We don't care.
                 setTimeout(() => {document.getElementById("android-link").classList.add("active");}, 900);
                 document.getElementById("how-to-use-link").href = "./tutorial/android";
             } else if (/iPad|iPhone|iPod/i.test(userAgent)) {
-                //document.querySelector(".button-container").style.flexDirection = "column-reverse";
+                document.querySelector(".button-container").style.flexDirection = "column-reverse";
                 document.getElementById("how-to-use-link").href = "./tutorial/ios";
                 setTimeout(() => {document.getElementById("ios-link").classList.add("active");}, 900);
             }
