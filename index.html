@@ -32,9 +32,9 @@ We don't care.
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
             if (/android/i.test(userAgent)) {
                 setTimeout(() => {document.getElementById("android-link").classList.add("active");}, 700);
-                document.getElementById("how-to-use-link").href = "./android";
+                document.getElementById("how-to-use-link").href = "./tutorial/android";
             } else if (/iPad|iPhone|iPod/i.test(userAgent)) {
-                document.getElementById("how-to-use-link").href = "./ios";
+                document.getElementById("how-to-use-link").href = "./tutorial/ios";
                 setTimeout(() => {document.getElementById("ios-link").classList.add("active");}, 700);
                 document.querySelector(".button-container").style.flexDirection = "column-reverse";
             }
